@@ -11,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0"
         ndk {
+            moduleName "JNIProvider"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+
             moduleName "hello"
             abiFilters "armeabi", "armeabi-v7a", "x86"
         }
