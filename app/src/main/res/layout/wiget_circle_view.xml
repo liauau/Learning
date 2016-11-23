@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wow.learning.widget.CircleView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myns="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    myns:centerX="500"
+    myns:centerY="500"
+    myns:circle_color="@android:color/holo_green_light"
+    myns:radius="300"
+    />

@@ -23,4 +23,10 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:text="no text"/>
+
+    <Button
+        android:id="@+id/start_siactivity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIActivity"/>
 </LinearLayout>

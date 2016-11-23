@@ -1,5 +1,6 @@
 package com.wow.learning.widget;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Matrix;
 import android.graphics.RectF;
@@ -51,6 +52,7 @@ public class ZoomImageView extends ImageView implements ViewTreeObserver.OnGloba
         TOUCH_SLOP = ViewConfiguration.get(context).getScaledTouchSlop();
     }
 
+    @TargetApi(21)
     public ZoomImageView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         super.setScaleType(ScaleType.MATRIX);
