@@ -1,9 +1,12 @@
 package com.wow.learning;
 
 import android.annotation.TargetApi;
+import android.content.ComponentCallbacks2;
+import android.content.ContentProviderOperation;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.BatteryManager;
 import android.os.Bundle;
@@ -42,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @OnClick(R.id.canvas_demo_btn)
+    public void clickCanvasDemo() {
+        Intent intent = new Intent(this, CanvasActivity.class);
+        startActivity(intent);
+    }
     public float getBatteryLevel() {
         float bLevel;
 
@@ -65,5 +73,15 @@ public class MainActivity extends AppCompatActivity {
         wifiManager.startScan();
         boolean is5G = wifiManager.is5GHzBandSupported();
         Log.i("liauau", "wifi 5G is " + is5G);
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+        ContentProviderOperation.Builder cb = ContentProviderOperation.newInsert(Uri.EMPTY);
+        ContentProviderOperation co = cb.withExpectedCount(0).build();
+        if (level >= ComponentCallbacks2.TRIM_MEMORY_BACKGROUND) {
+            Log.i("liauau", "onTrimMemory level is " + level);
+        }
     }
 }

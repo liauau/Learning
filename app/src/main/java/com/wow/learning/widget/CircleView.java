@@ -126,7 +126,5 @@ public class CircleView extends View implements ScaleGestureDetector.OnScaleGest
         mPaint.setStrokeWidth(5);
         mPaint.setStyle(Paint.Style.STROKE);
         canvas.drawCircle(cx, cy, radius, mPaint);
-//        mRectF.set(cx - radius, cy - radius, cx + radius, cy + radius);
-//        canvas.drawArc(mRectF, 0, 380, true, mPaint);
     }
 }
