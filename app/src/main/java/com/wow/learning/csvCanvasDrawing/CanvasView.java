@@ -1,4 +1,4 @@
-package com.wow.learning.widget;
+package com.wow.learning.csvCanvasDrawing;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ljinjin on 11/24/16.
+ * @author ljinjin on 11/24/16.
  */
 
 public class CanvasView extends View {

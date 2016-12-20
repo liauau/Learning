@@ -1,4 +1,4 @@
-package com.wow.learning;
+package com.wow.learning.csvCircle;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,13 +9,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.RelativeLayout;
 
-import com.wow.learning.widget.CircleView;
+import com.wow.learning.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by ljinjin on 11/23/16.
+ * 画出相切的圆
+ *
+ * @author ljinjin on 11/23/16.
  */
 
 public class CircleActivity extends AppCompatActivity {

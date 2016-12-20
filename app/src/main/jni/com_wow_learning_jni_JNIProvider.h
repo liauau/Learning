@@ -31,6 +31,14 @@ JNIEXPORT jint JNICALL Java_com_wow_learning_jni_JNIProvider_getCount
 JNIEXPORT jint JNICALL Java_com_wow_learning_jni_JNIProvider_getMoney
   (JNIEnv *, jclass);
 
+/*
+ * Class:     com_wow_learning_jni_JNIProvider
+ * Method:    test
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_wow_learning_jni_JNIProvider_test
+  (JNIEnv *, jclass);
+
 #ifdef __cplusplus
 }
 #endif

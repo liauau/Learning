@@ -1,11 +1,13 @@
-package com.wow.learning;
+package com.wow.learning.csvCanvasDrawing;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.wow.learning.R;
+
 /**
- * Created by ljinjin on 11/24/16.
+ * @author ljinjin on 11/24/16.
  */
 
 public class CanvasActivity extends AppCompatActivity {

@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ZoomImageActivity">
+        <activity android:name=".csvZoomImage.ZoomImageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +30,7 @@
         </activity>
 
 
-        <activity android:name=".JniActivity">
+        <activity android:name=".jni.JniActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -50,7 +50,7 @@
         </activity>
 
          <activity
-            android:name=".CircleActivity">
+            android:name=".csvCircle.CircleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -59,7 +59,7 @@
         </activity>
 
          <activity
-            android:name=".CanvasActivity">
+            android:name=".csvCanvasDrawing.CanvasActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>

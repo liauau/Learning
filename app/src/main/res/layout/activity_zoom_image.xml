@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wow.learning.ZoomImageActivity">
+    tools:context="com.wow.learning.csvZoomImage.ZoomImageActivity">
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="wrap_content"

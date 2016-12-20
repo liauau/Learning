@@ -1,4 +1,4 @@
-package com.wow.learning;
+package com.wow.learning.csvZoomImage;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.wow.learning.widget.ZoomImageView;
+import com.wow.learning.R;
+import com.wow.learning.csvZoomImage.ZoomImageView;
 
 public class ZoomImageActivity extends AppCompatActivity {
     private ViewPager mViewPager;

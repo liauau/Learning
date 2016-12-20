@@ -1,4 +1,4 @@
-package com.wow.learning.widget;
+package com.wow.learning.csvCircle;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -21,7 +21,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ljinjin on 11/16/16.
+ * 自定义圆形,可配置属性(圆心坐标, 半径, 颜色), 可放大缩小
+ *
+ * @author ljinjin on 11/16/16.
  */
 
 public class CircleView extends View implements ScaleGestureDetector.OnScaleGestureListener,

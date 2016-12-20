@@ -14,10 +14,11 @@ android {
         versionName "1.0"
         ndk {
             moduleName "JNIProvider"
+            ldLibs "log"
             abiFilters "armeabi", "armeabi-v7a", "x86"
 
-            moduleName "hello"
-            abiFilters "armeabi", "armeabi-v7a", "x86"
+//            moduleName "hello"
+//            abiFilters "armeabi", "armeabi-v7a", "x86"
         }
     }
     buildTypes {

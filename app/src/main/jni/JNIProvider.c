@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <jni.h>
 
+#include "com_wow_learning_jni_JNIProvider.h"
+
 JNIEXPORT jstring
 JNICALL Java_com_wow_learning_jni_JNIProvider_getName (JNIEnv *env, jclass class) {
     return (*env)->NewStringUTF(env, "my name is apple, this is a beautiful world. ");

@@ -1,4 +1,4 @@
-package com.wow.learning;
+package com.wow.learning.jni;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.wow.learning.jni.JNIProvider;
+import com.wow.learning.R;
+import com.wow.learning.SIActivity;
 
 /**
- * Created by lz on 16/8/17.
+ * @author jinjin on 16/8/17.
  */
 public class JniActivity extends AppCompatActivity {
     private TextView mJniTv;
@@ -19,11 +20,11 @@ public class JniActivity extends AppCompatActivity {
     private Button mBtn;
 
     static {
-        System.loadLibrary("hello");
-//        System.loadLibrary("JNIProvider"); 根据build.gradle文件决定加载哪个so
+//        System.loadLibrary("hello");
+//        System.loadLibrary("JNIProvider"); //根据build.gradle文件决定加载哪个so
     }
 
-    public static native String getStrFromC();
+//    public static native String getStrFromC();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,15 +42,17 @@ public class JniActivity extends AppCompatActivity {
         });
 
         if (mJniTv != null) {
-            mJniTv.setText(getStrFromC());
-            Log.i("liauau", getStrFromC());
+//            mJniTv.setText(getStrFromC());
+//            Log.i("liauau", getStrFromC());
         }
 
         handleJni();
     }
 
     private void handleJni() {
-        String str = getStrFromC() + JNIProvider.getName() + "\n"  + JNIProvider.getCount() + " " + JNIProvider.getMoney();
+//        String str = getStrFromC() + JNIProvider.getName() + "\n"  + JNIProvider.getCount() + " " + JNIProvider.getMoney();
+        String str = JNIProvider.getName() + "\n"  + JNIProvider.getCount() + " " + JNIProvider.getMoney();
         mJniProviderTv.setText(str);
+        JNIProvider.test();
     }
 }

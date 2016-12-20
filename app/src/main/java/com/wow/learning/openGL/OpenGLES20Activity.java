@@ -1,4 +1,4 @@
-package com.wow.learning;
+package com.wow.learning.openGL;
 
 import android.content.Context;
 import android.opengl.GLES20;
@@ -11,7 +11,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 /**
- * Created by ljinjin on 12/8/16.
+ * @author ljinjin on 12/8/16.
  */
 
 public class OpenGLES20Activity extends AppCompatActivity {

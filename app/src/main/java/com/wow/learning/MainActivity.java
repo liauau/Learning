@@ -14,6 +14,11 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.wow.learning.csvCanvasDrawing.CanvasActivity;
+import com.wow.learning.csvCircle.CircleActivity;
+import com.wow.learning.csvZoomImage.ZoomImageActivity;
+import com.wow.learning.jni.JniActivity;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -78,8 +83,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
-        ContentProviderOperation.Builder cb = ContentProviderOperation.newInsert(Uri.EMPTY);
-        ContentProviderOperation co = cb.withExpectedCount(0).build();
         if (level >= ComponentCallbacks2.TRIM_MEMORY_BACKGROUND) {
             Log.i("liauau", "onTrimMemory level is " + level);
         }
